@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OnyxDetails | Premium Mobile Car Wash in Sabie</title>
+  <meta name="description" content="OnyxDetails offers premium mobile car washes and detailing in Sabie, Mpumalanga. Book on WhatsApp for Basic Wash, Detailing, Bi-weekly plans, and Special Pack deals." />
+  <meta name="theme-color" content="#0b0b0d" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OnyxDetails | Premium Mobile Car Care" />
+  <meta property="og:description" content="Mobile car wash and detailing at your home in Sabie. Book on WhatsApp: 081 532 8774" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_ZA" />
+  <!-- Replace with your image path later (e.g. /assets/og.jpg) -->
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "OnyxDetails",
+    "areaServed": "Sabie, Mpumalanga, South Africa",
+    "telephone": "+27815328774",
+    "url": "",
+    "description": "Premium mobile car wash and detailing at your home in Sabie.",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #0b0b0d;
+      --panel: rgba(18, 18, 22, 0.78);
+      --panel2: rgba(16, 16, 20, 0.92);
+      --line: rgba(255, 255, 255, 0.08);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: rgba(255, 255, 255, 0.68);
+      --soft: rgba(255, 255, 255, 0.10);
+      --gold: #d6b06a;
+      --gold2: #f1d39b;
+      --shadow: 0 16px 60px rgba(0,0,0,0.55);
+      --shadow2: 0 10px 30px rgba(0,0,0,0.55);
+      --radius: 18px;
+      --radius2: 24px;
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 700px at 70% -10%, rgba(214,176,106,0.12), transparent 60%),
+                  radial-gradient(900px 520px at 10% 20%, rgba(241,211,155,0.08), transparent 55%),
+                  linear-gradient(180deg, #07070a 0%, #0b0b0d 100%);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.35;
+      overflow-x:hidden;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    /* Subtle texture */
+    .grain{
+      pointer-events:none;
+      position:fixed;
+      inset:0;
+      opacity:0.08;
+      mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+      background-size:260px 260px;
+      z-index:1;
+    }
+
+    /* Header */
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom:1px solid var(--line);
+      background: rgba(10,10,12,0.62);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 170px;
+    }
+    .mark{
+      width:34px; height:34px;
+      border-radius:12px;
+      background:
+        radial-gradient(10px 10px at 30% 25%, rgba(241,211,155,0.55), transparent 65%),
+        linear-gradient(135deg, rgba(214,176,106,0.20), rgba(214,176,106,0.06)),
+        rgba(255,255,255,0.04);
+      border:1px solid rgba(214,176,106,0.22);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      position:relative;
+    }
+    .mark:after{
+      content:"";
+      position:absolute;
+      inset:9px;
+      border:1px solid rgba(214,176,106,0.55);
+      transform: rotate(45deg);
+      border-radius:6px;
+    }
+    .brand h1{
+      font-size:16px;
+      margin:0;
+      letter-spacing:0.3px;
+      font-weight:750;
+    }
+    .brand p{
+      margin:0;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .navlinks{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    .navlinks a{
+      font-size:13px;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+    }
+    .navlinks a:hover{color:var(--text); border-color: rgba(255,255,255,0.08); background: rgba(255,255,255,0.03)}
+    .ctaRow{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 170px;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid rgba(214,176,106,0.28);
+      background: linear-gradient(180deg, rgba(214,176,106,0.18), rgba(214,176,106,0.08));
+      box-shadow: var(--shadow2);
+      color: var(--text);
+      font-weight:700;
+      letter-spacing:0.2px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .18s ease, filter .18s ease, border-color .18s ease;
+    }
+    .btn:hover{transform: translateY(-1px); filter: brightness(1.06); border-color: rgba(241,211,155,0.48)}
+    .btn:active{transform: translateY(0px); filter: brightness(0.98)}
+    .btn.secondary{
+      border:1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      box-shadow:none;
+      color:var(--text);
+      font-weight:650;
+    }
+    .btn.secondary:hover{border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.06)}
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(214,176,106,0.20);
+      background: rgba(214,176,106,0.07);
+      color: rgba(241,211,155,0.92);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+
+    /* Hero */
+    .hero{
+      position:relative;
+      padding:54px 0 28px;
+      z-index:2;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border-radius: var(--radius2);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      min-height: 360px;
+    }
+    .heroCard .inner{
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      height:100%;
+    }
+    .heroCard h2{
+      margin:0;
+      font-size:40px;
+      letter-spacing:-0.6px;
+      line-height:1.06;
+    }
+    .heroCard p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+      max-width: 52ch;
+    }
+    .heroActions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 8px;
+    }
+    .trustRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .trustItem{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.12);
+    }
+
+    .heroVisual{
+      border-radius: var(--radius2);
+      border:1px solid rgba(255,255,255,0.08);
+      background:
+        radial-gradient(500px 260px at 30% 20%, rgba(214,176,106,0.18), transparent 60%),
+        radial-gradient(420px 240px at 70% 35%, rgba(241,211,155,0.10), transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      min-height: 360px;
+    }
+    .heroVisual:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:
+        linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.55)),
+        url("assets/hero.jpg");
+      background-size: cover;
+      background-position:center;
+      opacity:0.45;
+      filter: contrast(1.05) saturate(1.05);
+    }
+    .heroVisual .overlay{
+      position:absolute;
+      inset:0;
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      gap:12px;
+    }
+    .miniCard{
+      border-radius:18px;
+      background: rgba(10,10,12,0.70);
+      border:1px solid rgba(255,255,255,0.10);
+      padding:14px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .miniCard strong{
+      display:block;
+      font-size:14px;
+      letter-spacing:0.2px;
+      margin-bottom:6px;
+    }
+    .miniCard span{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Section base */
+    section{padding: 26px 0; position:relative; z-index:2}
+    .sectionHead{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 14px;
+    }
+    .sectionHead h3{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-0.2px;
+    }
+    .sectionHead p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      max-width: 60ch;
+    }
+
+    /* Packages */
+    .callout{
+      border-radius: 18px;
+      border:1px solid rgba(214,176,106,0.22);
+      background: linear-gradient(180deg, rgba(214,176,106,0.14), rgba(214,176,106,0.06));
+      padding:14px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow2);
+    }
+    .callout .left{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .callout .left strong{font-size:14px}
+    .callout .left span{font-size:12px; color: rgba(255,255,255,0.75)}
+    .callout .right{display:flex; gap:10px; flex-wrap:wrap}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+    }
+    .card{
+      grid-column: span 4;
+      border-radius: var(--radius2);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height: 220px;
+    }
+    .card .top{
+      padding:16px 16px 12px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.14);
+    }
+    .card .title{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .card .title strong{
+      font-size:16px;
+      letter-spacing:0.2px;
+    }
+    .card .title span{
+      font-size:12px;
+      color:var(--muted);
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(214,176,106,0.28);
+      background: rgba(214,176,106,0.08);
+      color: rgba(241,211,155,0.95);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:0.2px;
+      white-space:nowrap;
+    }
+    .price{
+      padding: 12px 16px 0;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .price .amount{
+      font-size:22px;
+      font-weight:900;
+      letter-spacing:-0.3px;
+      color: rgba(241,211,155,0.98);
+    }
+    .price .unit{
+      color: var(--muted);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .card ul{
+      margin:10px 0 0;
+      padding: 0 16px 16px 34px;
+      color: rgba(255,255,255,0.82);
+      font-size:13px;
+      line-height:1.45;
+    }
+    .card li{margin: 7px 0}
+    .card .actions{
+      margin-top:auto;
+      padding: 14px 16px 16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.10);
+    }
+    .card .actions .btn{
+      width:100%;
+      padding:12px 14px;
+      border-radius:16px;
+    }
+
+    /* Services */
+    .tile{
+      grid-column: span 3;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      padding: 16px;
+      box-shadow: var(--shadow2);
+      min-height: 140px;
+    }
+    .tile strong{display:block; margin-bottom:8px}
+    .tile p{margin:0; color:var(--muted); font-size:13px}
+
+    /* How it works */
+    .step{
+      grid-column: span 4;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:16px;
+      box-shadow: var(--shadow2);
+      min-height: 150px;
+    }
+    .step .num{
+      width:34px; height:34px;
+      border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      border:1px solid rgba(214,176,106,0.28);
+      background: rgba(214,176,106,0.10);
+      color: rgba(241,211,155,0.95);
+      font-weight:900;
+      margin-bottom:10px;
+    }
+    .step strong{display:block; margin-bottom:8px}
+    .step p{margin:0; color:var(--muted); font-size:13px}
+
+    /* Gallery */
+    .ph{
+      grid-column: span 4;
+      height: 190px;
+      border-radius: var(--radius2);
+      border:1px solid rgba(255,255,255,0.08);
+      background:
+        radial-gradient(220px 140px at 20% 25%, rgba(214,176,106,0.18), transparent 60%),
+        radial-gradient(260px 170px at 80% 35%, rgba(241,211,155,0.10), transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow2);
+      position:relative;
+      overflow:hidden;
+    }
+    .ph:after{
+      content:"";
+      position:absolute;
+      inset:-40%;
+      background:
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,0.06) 45%, transparent 65%);
+      transform: rotate(10deg);
+      animation: sheen 6.5s ease-in-out infinite;
+      opacity: 0.55;
+    }
+    @keyframes sheen{
+      0%{transform: translateX(-12%) rotate(10deg)}
+      50%{transform: translateX(10%) rotate(10deg)}
+      100%{transform: translateX(-12%) rotate(10deg)}
+    }
+
+    /* Testimonials */
+    .quote{
+      grid-column: span 4;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      padding: 16px;
+      box-shadow: var(--shadow2);
+      min-height: 160px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .quote p{margin:0; color: rgba(255,255,255,0.82); font-size:13px; line-height:1.55}
+    .quote .who{margin-top:auto; color: var(--muted); font-size:12px}
+
+    /* FAQ */
+    .faq{
+      border-radius: var(--radius2);
+      border:1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    .faq button{
+      width:100%;
+      padding: 16px;
+      border:0;
+      background: transparent;
+      color: var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      cursor:pointer;
+      font-weight:750;
+      font-size:14px;
+      text-align:left;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+    .faq button:hover{background: rgba(255,255,255,0.03)}
+    .faq button:focus{outline: none}
+    .faq button:focus-visible{
+      outline: 2px solid rgba(241,211,155,0.55);
+      outline-offset: -2px;
+    }
+    .faq .ans{
+      padding: 0 16px 16px;
+      color: var(--muted);
+      font-size:13px;
+      display:none;
+    }
+    .faq .row.open .ans{display:block}
+    .faq .chev{
+      width:28px; height:28px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.10);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: rgba(241,211,155,0.90);
+      background: rgba(0,0,0,0.10);
+      flex: 0 0 auto;
+      transition: transform .18s ease;
+    }
+    .faq .row.open .chev{transform: rotate(180deg)}
+
+    /* Footer */
+    footer{
+      padding: 26px 0 44px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.15);
+      position:relative;
+      z-index:2;
+    }
+    .footGrid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:16px;
+      align-items:start;
+    }
+    .footCard{
+      border-radius: var(--radius2);
+      border:1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      padding:16px;
+      box-shadow: var(--shadow2);
+    }
+    .footCard h4{margin:0 0 8px; font-size:14px}
+    .footCard p{margin:0; color:var(--muted); font-size:13px; line-height:1.55}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+
+    /* Back to top */
+    .toTop{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 80;
+      opacity:0;
+      transform: translateY(10px);
+      pointer-events:none;
+      transition: opacity .18s ease, transform .18s ease;
+    }
+    .toTop.show{
+      opacity:1;
+      transform: translateY(0px);
+      pointer-events:auto;
+    }
+    .toTop .btn{
+      border-radius: 999px;
+      padding: 12px 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr; }
+      .heroCard h2{font-size:36px}
+      .card{grid-column: span 6}
+      .tile{grid-column: span 6}
+      .step{grid-column: span 6}
+      .ph{grid-column: span 6}
+      .quote{grid-column: span 6}
+      .footGrid{grid-template-columns:1fr}
+      .navlinks{display:none}
+    }
+    @media (max-width: 620px){
+      .hero{padding: 34px 0 18px}
+      .heroCard .inner{padding:18px}
+      .heroVisual .overlay{padding:14px}
+      .heroCard h2{font-size:32px}
+      .card{grid-column: span 12}
+      .tile{grid-column: span 12}
+      .step{grid-column: span 12}
+      .ph{grid-column: span 12}
+      .quote{grid-column: span 12}
+      .ctaRow{min-width:auto}
+      .brand{min-width:auto}
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *{transition:none !important; animation:none !important}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <h1>OnyxDetails</h1>
+            <p>Wash in your driveway</p>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="ctaRow">
+          <a class="btn" id="navBookBtn" href="#" aria-label="Book on WhatsApp">
+            <span aria-hidden="true">📲</span>
+            Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <div class="inner">
+            <div class="pill">Premium mobile service in Sabie</div>
+            <h2>Premium Mobile Car Care</h2>
+            <p>Interior and exterior cleaning done at your home in Sabie, Mpumalanga. Clean finish, consistent routine, and a service you can trust.</p>
+
+            <div class="heroActions">
+              <a class="btn" id="heroBookBtn" href="#" aria-label="Book on WhatsApp">
+                <span aria-hidden="true">✅</span>
+                Book on WhatsApp
+              </a>
+              <a class="btn secondary" href="#packages" aria-label="View packages">
+                View Packages
+              </a>
+            </div>
+
+            <div class="trustRow" aria-label="Trust badges">
+              <div class="trustItem"><span aria-hidden="true">🧼</span> Clean routine</div>
+              <div class="trustItem"><span aria-hidden="true">🚗</span> At your home</div>
+              <div class="trustItem"><span aria-hidden="true">⭐</span> First time 10% off</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroVisual" role="img" aria-label="Hero background image placeholder">
+          <div class="overlay">
+            <div class="miniCard">
+              <strong>Quick booking</strong>
+              <span>Tap WhatsApp, choose a package, and send your location.</span>
+            </div>
+            <div class="miniCard">
+              <strong>Pro finish</strong>
+              <span>Foam bath, hand wash, vacuum, wipe down, and deep detail options.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" aria-label="Packages">
+      <div class="sectionHead">
+        <div>
+          <h3>Packages</h3>
+          <p>Clear options, premium results. Pick what fits your schedule.</p>
+        </div>
+      </div>
+
+      <div class="callout" role="note" aria-label="Discount callout">
+        <div class="left">
+          <strong>First time wash: 10% discount</strong>
+          <span>Book on WhatsApp and mention “first time discount”.</span>
+        </div>
+        <div class="right">
+          <a class="btn secondary" href="#services">What’s included</a>
+          <a class="btn" id="calloutBookBtn" href="#" aria-label="Book on WhatsApp">
+            <span aria-hidden="true">📲</span>
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Basic Wash -->
+        <article class="card">
+          <div class="top">
+            <div class="title">
+              <strong>Basic Wash</strong>
+              <span>Interior and exterior refresh</span>
+            </div>
+            <div class="badge">Popular</div>
+          </div>
+          <div class="price">
+            <div class="amount">R220</div>
+            <div class="unit">Per Wash</div>
+          </div>
+          <ul>
+            <li>Interior &amp; Exterior</li>
+            <li>Foam bath &amp; hand wash</li>
+            <li>Basic vacuum &amp; wipe down</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="#" data-wa="Basic Wash" aria-label="Book Basic Wash on WhatsApp">
+              Book Basic Wash
+            </a>
+          </div>
+        </article>
+
+        <!-- Basic Wash Bi-weekly -->
+        <article class="card">
+          <div class="top">
+            <div class="title">
+              <strong>Basic Wash Bi-weekly</strong>
+              <span>Stay clean on a schedule</span>
+            </div>
+            <div class="badge">Plan</div>
+          </div>
+          <div class="price">
+            <div class="amount">R400</div>
+            <div class="unit">P/M</div>
+          </div>
+          <ul>
+            <li>Interior &amp; Exterior</li>
+            <li>1 basic wash every second week</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="#" data-wa="Basic Wash Bi-weekly" aria-label="Book Basic Wash Bi-weekly on WhatsApp">
+              Book Bi-weekly
+            </a>
+          </div>
+        </article>
+
+        <!-- Detail Interior & Exterior -->
+        <article class="card">
+          <div class="top">
+            <div class="title">
+              <strong>Detail Interior &amp; Exterior</strong>
+              <span>Deep clean, like new again</span>
+            </div>
+            <div class="badge">Detail</div>
+          </div>
+          <div class="price">
+            <div class="amount">R400</div>
+            <div class="unit">Per Detail</div>
+          </div>
+          <ul>
+            <li>Deep clean interior &amp; exterior</li>
+            <li>Shampoo seats &amp; mats</li>
+            <li>Make it look new again</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="#" data-wa="Detail Interior & Exterior" aria-label="Book Detail Interior and Exterior on WhatsApp">
+              Book Detail
+            </a>
+          </div>
+        </article>
+
+        <!-- Detail Bi-weekly -->
+        <article class="card">
+          <div class="top">
+            <div class="title">
+              <strong>Detail Bi-weekly</strong>
+              <span>Deep detail every second week</span>
+            </div>
+            <div class="badge">Plan</div>
+          </div>
+          <div class="price">
+            <div class="amount">R700</div>
+            <div class="unit">P/M</div>
+          </div>
+          <ul>
+            <li>Interior &amp; exterior detail</li>
+            <li>1 detail every second week</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="#" data-wa="Detail Bi-weekly" aria-label="Book Detail Bi-weekly on WhatsApp">
+              Book Bi-weekly
+            </a>
+          </div>
+        </article>
+
+        <!-- Special Pack -->
+        <article class="card">
+          <div class="top">
+            <div class="title">
+              <strong>Special Pack</strong>
+              <span>Best value monthly combo</span>
+            </div>
+            <div class="badge">Best Value</div>
+          </div>
+          <div class="price">
+            <div class="amount">R1099</div>
+            <div class="unit">P/M</div>
+          </div>
+          <ul>
+            <li>Week 1: I&amp;E detail</li>
+            <li>Week 2, 3, 4: Basic wash</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="#" data-wa="Special Pack" aria-label="Book Special Pack on WhatsApp">
+              Book Special Pack
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-label="Services">
+      <div class="sectionHead">
+        <div>
+          <h3>Services</h3>
+          <p>Choose a once-off clean or a plan. Everything is mobile, we come to you.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="tile">
+          <strong>Interior &amp; Exterior Wash</strong>
+          <p>Foam bath, hand wash, and a clean interior wipe down with vacuum.</p>
+        </div>
+        <div class="tile">
+          <strong>Detailing</strong>
+          <p>Deep clean interior and exterior, including shampoo seats and mats.</p>
+        </div>
+        <div class="tile">
+          <strong>Bi-weekly Plans</strong>
+          <p>Reliable maintenance options every second week, wash or full detail.</p>
+        </div>
+        <div class="tile">
+          <strong>Special Pack</strong>
+          <p>One deep detail, then three basic washes for a strong monthly reset.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" aria-label="How it works">
+      <div class="sectionHead">
+        <div>
+          <h3>How it works</h3>
+          <p>Simple process. No stress. Fast booking and clean results.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="step">
+          <div class="num">1</div>
+          <strong>Book on WhatsApp</strong>
+          <p>Select a package and send your suburb or location in Sabie.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <strong>We arrive and clean</strong>
+          <p>Professional routine and careful finishing. No rushing.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <strong>You enjoy the result</strong>
+          <p>Fresh interior and clean exterior. Repeat on a plan if you want consistency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" aria-label="Gallery">
+      <div class="sectionHead">
+        <div>
+          <h3>Gallery</h3>
+          <p>Replace these placeholders with your real photos whenever you are ready.</p>
+        </div>
+      </div>
+
+      <div class="grid" aria-label="Gallery placeholders">
+        <div class="ph" aria-hidden="true"></div>
+        <div class="ph" aria-hidden="true"></div>
+        <div class="ph" aria-hidden="true"></div>
+        <div class="ph" aria-hidden="true"></div>
+        <div class="ph" aria-hidden="true"></div>
+        <div class="ph" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews" aria-label="Testimonials">
+      <div class="sectionHead">
+        <div>
+          <h3>Testimonials</h3>
+          <p>Swap these with real client reviews as you collect them.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="quote">
+          <p>“Super clean finish and very professional. The interior looked brand new after the detail.”</p>
+          <div class="who">Local client, Sabie</div>
+        </div>
+        <div class="quote">
+          <p>“On time, neat work, and the wash quality is consistent. The bi-weekly plan is worth it.”</p>
+          <div class="who">Repeat customer</div>
+        </div>
+        <div class="quote">
+          <p>“Easy booking on WhatsApp and the Special Pack keeps my car looking fresh all month.”</p>
+          <div class="who">Monthly package client</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-label="FAQ">
+      <div class="sectionHead">
+        <div>
+          <h3>FAQ</h3>
+          <p>Quick answers before you book.</p>
+        </div>
+      </div>
+
+      <div class="faq" role="list">
+        <div class="row" role="listitem">
+          <button type="button" aria-expanded="false">
+            What areas do you service?
+            <span class="chev" aria-hidden="true">⌄</span>
+          </button>
+          <div class="ans">Sabie and nearby areas. Message your location on WhatsApp and I will confirm availability.</div>
+        </div>
+
+        <div class="row" role="listitem">
+          <button type="button" aria-expanded="false">
+            How do I book?
+            <span class="chev" aria-hidden="true">⌄</span>
+          </button>
+          <div class="ans">Tap any “Book” button, select your package, and send your location plus preferred time.</div>
+        </div>
+
+        <div class="row" role="listitem">
+          <button type="button" aria-expanded="false">
+            What do I need to provide?
+            <span class="chev" aria-hidden="true">⌄</span>
+          </button>
+          <div class="ans">Access to the vehicle and enough space to work safely. Everything else is handled on-site.</div>
+        </div>
+
+        <div class="row" role="listitem">
+          <button type="button" aria-expanded="false">
+            How does the first time 10% discount work?
+            <span class="chev" aria-hidden="true">⌄</span>
+          </button>
+          <div class="ans">Mention “first time discount” when you message on WhatsApp and it will be applied to your booking.</div>
+        </div>
+
+        <div class="row" role="listitem">
+          <button type="button" aria-expanded="false">
+            Can I switch packages later?
+            <span class="chev" aria-hidden="true">⌄</span>
+          </button>
+          <div class="ans">Yes. Just tell me what you want to change when you book your next wash or detail.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <div class="sectionHead">
+        <div>
+          <h3>Contact</h3>
+          <p>Fastest way is WhatsApp. Tap to book in seconds.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="left">
+          <strong>WhatsApp: 081 532 8774</strong>
+          <span class="small muted">Based in Sabie, Mpumalanga</span>
+        </div>
+        <div class="right">
+          <a class="btn" id="contactBookBtn" href="#" aria-label="Book on WhatsApp">
+            <span aria-hidden="true">📲</span>
+            Book on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div class="footCard">
+          <h4>OnyxDetails</h4>
+          <p>Premium mobile car wash and detailing in Sabie. Clean, consistent routine with a luxury finish.</p>
+          <p class="small muted" style="margin-top:10px;">First time wash 10% discount available.</p>
+        </div>
+        <div class="footCard">
+          <h4>Quick links</h4>
+          <p><a href="#packages">Packages</a> · <a href="#services">Services</a> · <a href="#faq">FAQ</a></p>
+          <p class="small muted" style="margin-top:10px;">WhatsApp: <a href="#" id="footerBookBtn">081 532 8774</a></p>
+        </div>
+      </div>
+
+      <p class="small muted" style="margin:14px 0 0;">© <span id="year"></span> OnyxDetails. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toTop" id="toTop">
+    <button class="btn secondary" type="button" id="toTopBtn" aria-label="Back to top">
+      ↑ Top
+    </button>
+  </div>
+
+  <script>
+    // CONFIG
+    const CONFIG = {
+      businessName: "OnyxDetails",
+      waNumberE164: "27815328774", // +27 81 532 8774
+      waDisplay: "081 532 8774",
+      defaultMessage: "Hi OnyxDetails, I want to book a wash in Sabie. My location is: (send location). Preferred day/time: "
+    };
+
+    function waLink(packageName) {
+      const base = "https://wa.me/" + CONFIG.waNumberE164;
+      const pack = packageName ? ("Package: " + packageName + ". ") : "";
+      const msg = pack + CONFIG.defaultMessage;
+      return base + "?text=" + encodeURIComponent(msg);
+    }
+
+    // Wire primary buttons
+    const primaryButtons = [
+      "navBookBtn",
+      "heroBookBtn",
+      "calloutBookBtn",
+      "contactBookBtn",
+      "footerBookBtn"
+    ];
+
+    primaryButtons.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.setAttribute("href", waLink(""));
+      el.setAttribute("rel", "noopener");
+      el.setAttribute("target", "_blank");
+    });
+
+    // Package-specific buttons
+    document.querySelectorAll("[data-wa]").forEach(btn => {
+      const pack = btn.getAttribute("data-wa") || "";
+      btn.setAttribute("href", waLink(pack));
+      btn.setAttribute("rel", "noopener");
+      btn.setAttribute("target", "_blank");
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq .row button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const row = btn.closest(".row");
+        const isOpen = row.classList.contains("open");
+        // Close others
+        document.querySelectorAll(".faq .row").forEach(r => {
+          r.classList.remove("open");
+          const b = r.querySelector("button");
+          if (b) b.setAttribute("aria-expanded", "false");
+        });
+        // Toggle current
+        if (!isOpen) {
+          row.classList.add("open");
+          btn.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    // Back to top
+    const toTop = document.getElementById("toTop");
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 600) toTop.classList.add("show");
+      else toTop.classList.remove("show");
+    });
+    toTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
