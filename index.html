@@ -12,7 +12,6 @@
   <meta property="og:description" content="Mobile car wash and detailing at your home in Sabie. Book on WhatsApp: 081 532 8774" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_ZA" />
-  <!-- Replace with your image path later (e.g. /assets/og.jpg) -->
   <meta property="og:image" content="assets/og-image.jpg" />
 
   <!-- Favicon placeholder -->
@@ -487,33 +486,76 @@
     .step p{margin:0; color:var(--muted); font-size:13px}
 
     /* Gallery */
-    .ph{
-      grid-column: span 4;
-      height: 190px;
-      border-radius: var(--radius2);
-      border:1px solid rgba(255,255,255,0.08);
-      background:
-        radial-gradient(220px 140px at 20% 25%, rgba(214,176,106,0.18), transparent 60%),
-        radial-gradient(260px 170px at 80% 35%, rgba(241,211,155,0.10), transparent 60%),
-        linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-      box-shadow: var(--shadow2);
-      position:relative;
-      overflow:hidden;
+    .galleryGrid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
     }
-    .ph:after{
+
+    .galleryItem{
+      grid-column: span 6;
+      position:relative;
+      border-radius: var(--radius2);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      box-shadow: var(--shadow2);
+      aspect-ratio: 4 / 3;
+      min-height: 180px;
+    }
+
+    .galleryItem img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter: contrast(1.03) saturate(1.02);
+      transition: transform .25s ease, filter .25s ease;
+    }
+
+    .galleryItem:hover img{
+      transform: scale(1.02);
+      filter: contrast(1.05) saturate(1.04);
+    }
+
+    .galleryBadge{
+      position:absolute;
+      top:10px;
+      left:10px;
+      z-index:2;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.12);
+      background: rgba(8,8,10,0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: var(--text);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:0.15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+
+    .galleryBadge.before{
+      border-color: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.92);
+    }
+
+    .galleryBadge.after{
+      border-color: rgba(214,176,106,0.35);
+      color: rgba(241,211,155,0.95);
+      background: rgba(20,16,10,0.62);
+    }
+
+    .galleryItem::after{
       content:"";
       position:absolute;
-      inset:-40%;
-      background:
-        linear-gradient(115deg, transparent 0%, rgba(255,255,255,0.06) 45%, transparent 65%);
-      transform: rotate(10deg);
-      animation: sheen 6.5s ease-in-out infinite;
-      opacity: 0.55;
-    }
-    @keyframes sheen{
-      0%{transform: translateX(-12%) rotate(10deg)}
-      50%{transform: translateX(10%) rotate(10deg)}
-      100%{transform: translateX(-12%) rotate(10deg)}
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.18) 100%);
+      pointer-events:none;
     }
 
     /* Testimonials */
@@ -637,8 +679,8 @@
       .card{grid-column: span 6}
       .tile{grid-column: span 6}
       .step{grid-column: span 6}
-      .ph{grid-column: span 6}
       .quote{grid-column: span 6}
+      .galleryItem{grid-column: span 6}
       .footGrid{grid-template-columns:1fr}
       .navlinks{display:none}
     }
@@ -650,8 +692,8 @@
       .card{grid-column: span 12}
       .tile{grid-column: span 12}
       .step{grid-column: span 12}
-      .ph{grid-column: span 12}
       .quote{grid-column: span 12}
+      .galleryItem{grid-column: span 12}
       .ctaRow{min-width:auto}
       .brand{min-width:auto}
     }
@@ -950,19 +992,41 @@
       <div class="sectionHead">
         <div>
           <h3>Gallery</h3>
-          <p></p>
+          <p>Before and after results</p>
         </div>
       </div>
-<div class="grid" aria-label="Before and after gallery">
-  <img src="before1.jpeg" alt="Before image 1" loading="lazy" decoding="async" />
-  <img src="after1.jpeg" alt="After image 1" loading="lazy" decoding="async" />
 
-  <img src="before2.jpeg" alt="Before image 2" loading="lazy" decoding="async" />
-  <img src="after2.jpeg" alt="After image 2" loading="lazy" decoding="async" />
+      <div class="galleryGrid" aria-label="Before and after gallery">
+        <figure class="galleryItem">
+          <span class="galleryBadge before">Before 1</span>
+          <img src="before1.jpeg" alt="Before image 1" loading="lazy" decoding="async" />
+        </figure>
 
-  <img src="before3.jpeg" alt="Before image 3" loading="lazy" decoding="async" />
-  <img src="after3.jpeg" alt="After image 3" loading="lazy" decoding="async" />
-</div>
+        <figure class="galleryItem">
+          <span class="galleryBadge after">After 1</span>
+          <img src="after1.jpeg" alt="After image 1" loading="lazy" decoding="async" />
+        </figure>
+
+        <figure class="galleryItem">
+          <span class="galleryBadge before">Before 2</span>
+          <img src="before2.jpeg" alt="Before image 2" loading="lazy" decoding="async" />
+        </figure>
+
+        <figure class="galleryItem">
+          <span class="galleryBadge after">After 2</span>
+          <img src="after2.jpeg" alt="After image 2" loading="lazy" decoding="async" />
+        </figure>
+
+        <figure class="galleryItem">
+          <span class="galleryBadge before">Before 3</span>
+          <img src="before3.jpeg" alt="Before image 3" loading="lazy" decoding="async" />
+        </figure>
+
+        <figure class="galleryItem">
+          <span class="galleryBadge after">After 3</span>
+          <img src="after3.jpeg" alt="After image 3" loading="lazy" decoding="async" />
+        </figure>
+      </div>
     </section>
 
     <!-- TESTIMONIALS -->
@@ -970,7 +1034,7 @@
       <div class="sectionHead">
         <div>
           <h3>Testimonials</h3>
-          <p></p>
+          <p>Real feedback from local clients</p>
         </div>
       </div>
 
@@ -1095,7 +1159,7 @@
     // CONFIG
     const CONFIG = {
       businessName: "OnyxDetails",
-      waNumberE164: "27815328774", // +27 81 532 8774
+      waNumberE164: "27815328774",
       waDisplay: "081 532 8774",
       defaultMessage: "Hi OnyxDetails, I want to book a wash in Sabie. My location is: (send location). Preferred day/time: "
     };
@@ -1137,13 +1201,13 @@
       btn.addEventListener("click", () => {
         const row = btn.closest(".row");
         const isOpen = row.classList.contains("open");
-        // Close others
+
         document.querySelectorAll(".faq .row").forEach(r => {
           r.classList.remove("open");
           const b = r.querySelector("button");
           if (b) b.setAttribute("aria-expanded", "false");
         });
-        // Toggle current
+
         if (!isOpen) {
           row.classList.add("open");
           btn.setAttribute("aria-expanded", "true");
